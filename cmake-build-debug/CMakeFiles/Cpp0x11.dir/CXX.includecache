@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hui/Projects/Cpp0x11/explicit.h
+
+/Users/hui/Projects/Cpp0x11/main.cpp
+iostream
+-
+variadic_templates.h
+/Users/hui/Projects/Cpp0x11/variadic_templates.h
+explicit.h
+/Users/hui/Projects/Cpp0x11/explicit.h
+
+/Users/hui/Projects/Cpp0x11/variadic_templates.h
+iostream
+-
+
