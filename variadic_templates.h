@@ -98,17 +98,36 @@ std::ostream& operator<<(std::ostream& os, const std::tuple<Args...>& t){
 // recursive inheritance
 template <typename... Values> class tuple;
 template <> class tuple<>{};
-
 template <typename Head, typename... Tail>
 class tuple<Head, Tail...>:private tuple<Tail...>{
     typedef tuple<Tail...> inherited;
 public:
     tuple()= default;
     explicit tuple(Head v, Tail... vtail):m_head(v), inherited(vtail...){}// initialization list
-    typename Head::type head(){ return m_head; }
+//    typename Head::type head(){ return m_head; } error
+//    auto head()-> decltype(m_head){ return m_head;} used decltype() function
+    Head head() { return m_head; } // version 3
     inherited& tail(){ return *this;}
 protected:
     Head m_head;
+};
+
+
+// recursive composition
+template <typename... Values> class tup;
+template <> class tup<> {};
+template <typename Head, typename... Tail>
+class tup<Head, Tail...>{
+//    typedef tup<Tail...> composited;
+    using composited = tup<Tail...>;
+protected:
+    composited m_tail;
+    Head m_head;
+public:
+    tup(){}
+    explicit tup(Head v, Tail... vtail):m_head(v), m_tail(vtail...){}
+    Head head(){ return m_head; }
+    composited& tail() { return m_tail; }
 };
 
 

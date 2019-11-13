@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 #include "variadic_templates.h"
 #include "explicit.h"
 #include "lambdas.h"
@@ -12,6 +13,8 @@ int main() {
     test_lambda();
     std::cout << maximum(20,30,50,100,33,55) << std::endl;
     std::cout << std::make_tuple(7.5, "dd", std::bitset<8>(109), 42) << std::endl;
+    tup<double , std::string, std::bitset<8>, int > t(5, "dd", std::bitset<8>(109), 42);
+    std::cout << t.head() << std::endl;
     return 0;
 }
 

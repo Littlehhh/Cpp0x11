@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/hui/Projects/Cpp0x11/Rvalue_references.h">
+			<Option target="Cpp0x11"/>
+		</Unit>
 		<Unit filename="/Users/hui/Projects/Cpp0x11/alias_template.h">
 			<Option target="Cpp0x11"/>
 		</Unit>
