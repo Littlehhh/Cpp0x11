@@ -6,6 +6,7 @@
 #define CPP0X11_UNIFORM_INITIALIZATION_H
 
 #include <initializer_list>
+#include <array>
 // Initialization could happen with parentheses, braces, or assignment operators
 // use braces !!!!
 int values[] = {1,2,3};

@@ -44,7 +44,7 @@ public:
         void firstname() const {
 
         }
-        void lastname() cosnt {
+        void lastname() const {
 
         }
 };

@@ -14,6 +14,7 @@ void print(std::initializer_list<int> vals){
     }
 }
 
+
 class P{
 public:
     P(int a, int b){
@@ -21,9 +22,9 @@ public:
     }
     P(std::initializer_list<int> init_list){
         for(auto i : init_list){
-            cout << i << " ";
+            std::cout << i << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 };
 

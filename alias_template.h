@@ -69,6 +69,7 @@ private:
     char* _data;
     size_t _len;
 public:
+
     // move constructor
     MyString(MyString&& str) noexcept :_data(str._data), _len(str._len){
 
