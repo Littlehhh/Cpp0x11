@@ -9,7 +9,7 @@ int main() {
     Complex c1(12,5);
     Complex c2 = c1 + 5;
     l();
-
+    test_lambda();
     return 0;
 }
 
