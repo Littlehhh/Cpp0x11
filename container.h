@@ -9,6 +9,10 @@
 // Array  fixed number of elements
 // Forward-List
 // Unordered containers
+// tuple
+#include <tuple>
 
+auto t1 = std::make_tuple();
+size_t t = sizeof(t1);
 
 #endif //CPP0X11_CONTAINER_H
