@@ -57,7 +57,7 @@ public:
     // move assignment
     MyString& operator=(MyString&& str) noexcept {
         if(this != &str){
-            if(_data)
+            if(this->_data)
                 delete _data;
             _data = str._data;
             str._data = nullptr;
