@@ -24,7 +24,7 @@ void range_for(){
     }
 }
 
-// 接受容器的全剧函数 begin() end()
+// 接受容器的全局函数 begin() end()
 template <typename T>
 void printElements(const T& coll){
     for(const auto& elem: coll)
