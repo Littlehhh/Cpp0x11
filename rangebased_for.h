@@ -22,6 +22,10 @@ void range_for(){
     for( auto& elem : vec ){
         std::cout << elem << std::endl;
     }
+    //https://stackoverflow.com/questions/26991393/what-does-auto-e-do-in-range-based-for-loops
+    for( auto&& elem : vec ){
+        std::cout << elem << std::endl;
+    }
 }
 
 // 接受容器的全局函数 begin() end()
